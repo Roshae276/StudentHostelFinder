@@ -20,15 +20,31 @@ A Java Swing desktop application for finding and managing student hostels near c
 - MVC design pattern concepts applied (separation of concerns)
 
 ## Installation & Running
+clone the repository
+git clone https://github.com/Roshae276/StudentHostelFinder.git
+cd StudentHostelFinder
 
-1. Clone the repository:
-git clone https://github.com/yourusername/StudentHostelFinder.git
 
-text
-2. Open the project in your favorite Java IDE (e.g., IntelliJ IDEA, Eclipse, VS Code with Java extension).
-3. Build and run the `Main.java` file to launch the application.
-4. Use the Signup page to create a student user with exam, coaching, and branch selections.
-5. Explore hostels and accommodations on the Student Dashboard.
+
+### Compile the project
+
+> **Using Git Bash or Unix-style shell (recommended for Windows users):**
+
+mkdir -p bin
+find . -name "*.java" -print0 | xargs -0 javac -d bin
+
+
+
+> **Using Windows CMD or PowerShell (if all files are in one directory):**
+
+mkdir bin
+javac -d bin *.java
+
+
+
+### Run the application
+
+java -cp bin Main
 
 ## Project Structure
 
